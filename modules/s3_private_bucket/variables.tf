@@ -6,11 +6,9 @@ variable "bucket_name" {
 variable "environment" {
   type        = string
   description = "Environment name (e.g., dev, prod, etc.)."
-  default     = "dev"
 }
 
 variable "project" {
   type        = string
   description = "Project name."
-  default     = "tf-training"
 }
