@@ -24,17 +24,17 @@ No public access, no policies, no extras.
 ## Project Structure
 ```
 s3-basic-private/
-├─ main.tf
-├─ variables.tf
-├─ outputs.tf
-├─ versions.tf
-├─ README.md
-├─ .gitignore
-└─ modules/
-└─ s3_private_bucket/
-├─ main.tf
-├─ variables.tf
-└─ outputs.tf
+  ├─ main.tf
+  ├─ variables.tf
+  ├─ outputs.tf
+  ├─ versions.tf
+  ├─ README.md
+  ├─ .gitignore
+  └─ modules/
+    └─ s3_private_bucket/
+      ├─ main.tf
+      ├─ variables.tf
+      └─ outputs.tf
 ```
 ```
 
