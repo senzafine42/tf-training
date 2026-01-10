@@ -1,13 +1,7 @@
-provider "aws" {
-  region = var.region
-}
-
-# 1) Create the bucket
 resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
 }
 
-# 2) Make ownership 'BucketOwnerEnforced' (ACLs disabled)
 resource "aws_s3_bucket_ownership_controls" "this" {
   bucket = aws_s3_bucket.this.id
 
@@ -16,7 +10,6 @@ resource "aws_s3_bucket_ownership_controls" "this" {
   }
 }
 
-# 3) Block ALL public access (keeps it private)
 resource "aws_s3_bucket_public_access_block" "this" {
   bucket = aws_s3_bucket.this.id
 
