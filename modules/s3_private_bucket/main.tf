@@ -1,5 +1,11 @@
 resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
+
+  tags = {
+    Environment = var.environment
+    Project     = var.project
+    ManagedBy   = "terraform"
+  }
 }
 
 resource "aws_s3_bucket_ownership_controls" "this" {
