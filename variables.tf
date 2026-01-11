@@ -1,13 +1,13 @@
 variable "region" {
   type        = string
   description = "AWS region to deploy into."
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
-variable "bucket_name" {
-  type        = string
-  description = "Globally-unique S3 bucket name."
-}
+# variable "bucket_name" {
+#   type        = string
+#   description = "Globally-unique S3 bucket name."
+# }
 
 variable "environment" {
   type        = string
